@@ -9,7 +9,7 @@ body{
 header{
     /* background-color: red; */
     width: 100%;
-    height: 15%;
+    height: fit-content;
 }
 
 nav a{
@@ -17,6 +17,10 @@ nav a{
     float: right;
     margin: 1% 5px auto 35px;
     color: hsl(236, 13%, 42%);
+}
+nav a:hover{
+    cursor:pointer;
+    color: hsl(5, 85%, 63%);
 }
 
 main{
@@ -95,6 +99,10 @@ aside *{
     font-weight: 400;
     color: hsl(36, 100%, 99%);
 }
+.highlight-heading:hover{
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
 
 .highlight-description{
     color:hsl(236, 13%, 42%);
@@ -139,6 +147,10 @@ footer article .thumbnail{
 }
 .related-content h3{
     color: hsl(240, 100%, 5%);
+}
+.related-content h3:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
 }
 .related-content h4{
     color: hsl(236, 13%, 42%);
