@@ -76,6 +76,11 @@ main span{
     padding: 10px 20px;
     text-align: center;
 }
+.article-description button:hover{
+    color: hsl(36, 100%, 99%);
+    background-color: hsl(240, 100%, 5%);
+    cursor: pointer;
+}
 main aside{
     background-color: hsl(240, 100%, 5%);
     color: white;
