@@ -3,6 +3,7 @@ body{
     padding: 5em 15em;
     height: 70vh;
     width: 70vw;
+    font-family: url(https://fonts.google.com/specimen/Inter);
 }
 
 header{
@@ -99,7 +100,9 @@ aside *{
     color:hsl(236, 13%, 42%);
     /* font-weight: 400; */
 }
-
+.divider{
+    border: 0.2px solid hsla(45, 5%, 85%, 0.61);
+}
 footer{
     /* background-color: blueviolet; */
     width: 100%;
@@ -131,4 +134,12 @@ footer article .thumbnail{
     /* background-color: aliceblue; */
     display: inline-block;
 }
-
+.related-content h1{
+    color: hsl(233, 8%, 79%);
+}
+.related-content h3{
+    color: hsl(240, 100%, 5%);
+}
+.related-content h4{
+    color: hsl(236, 13%, 42%);
+}
