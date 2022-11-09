@@ -3,6 +3,7 @@ body{
     padding: 5em 15em;
     height: 70vh;
     width: 70vw;
+    overflow-x: hidden;
     font-family: url(https://fonts.google.com/specimen/Inter);
 }
 
@@ -26,8 +27,9 @@ nav a:hover{
 main{
     /* background-color: blanchedalmond; */
     width: 100%;
-    height:fit-content;
+    max-height: 50vh;
     display: flex;
+    /* overflow-y: scroll; */
 }
 
 main figure, article{
@@ -38,17 +40,17 @@ main figure, article{
     margin: 0;
 }
 
-figure img{
+.web3-desktop-img{
     width: 100%;
     height: auto;
     background-color: pink;
     margin: 10px auto;
 }
 
-main span{
+/* main span{
     width: 48%;
     display: inline-block;
-}
+} */
 .article-header{
     font-size: 45px;
     font-weight: 800;
@@ -159,4 +161,86 @@ footer article .thumbnail{
 }
 .related-content h4{
     color: hsl(236, 13%, 42%);
+}
+.mobile{
+    display: none;
+}
+.menu-icon-close{
+    display: none;
+}
+
+
+@media (max-width: 375px){
+    body{
+        margin: 5px 15px;
+        padding:0;
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    main{
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }   
+    main aside{
+        margin:10px 10px 10px 0;
+        width: 90vw;
+        display: block;
+    }
+    nav .menu-list{
+        display: none;
+        flex-direction:column;
+        float: right;
+        /* margin-top: 60px; */
+        position: absolute;
+        right: 0;
+        padding: 40px 10px 100px 10px;
+        background-color: rgba(255, 255, 255, 1);
+        z-index: 999;
+    }
+    .menu-list a{
+        margin: 10px auto;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .menu-icon, .menu-icon-close{
+        float: right;
+        margin: 2% 25px;
+        width: 30px;
+        height: 30px;
+        /* margin: auto; */
+    }
+    .menu-icon, .menu-icon-close:hover{
+        cursor: pointer;
+    }
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    .hero-section{
+        display:flex;
+        flex-direction: column;
+    }
+    .web3-mobile-img{
+        width: 100vw;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer article{
+        max-width:100vw;
+        display: flex;
+        padding: 0;
+    }
+    .related-content{
+        width: 100%;
+    }
+
 }
